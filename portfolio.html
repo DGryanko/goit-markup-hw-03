@@ -1,94 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+
+    <!-- Шрифты -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=fallback" >    
+    
+    <!-- Мои стили -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Нормализатор --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
 </head>
-<body>
-    <header>
-        <img src="./Img/WebStudio.svg" alt="Logo">
-        <nav>
-            <a href="./index.html">Студия</a>
-            <a href="#">Портфолио</a>
-            <a href="#">Контакты</a>
-        </nav>
-        <address>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </address>        
-        <address>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
+<pody>
+    <!-- Шапка -->
+    <header class="page-header" >
+        <div class="container">
+            <nav class="menu_nav">
+                <a href="./index.html" class=" logo"> Web<span class="logo header">Studio</span> </a>
+                <ul>
+                    <li> <a href="./index.html" class="link">Студия</a></li>
+                    <li> <a href="./portfolio.html" class="link current">Портфолио</a></li>
+                    <li><a href="#" class="link">Контакты</a></li>
+                </ul>                                         
+            </nav>
+            <ul>
+                <li><a href="mailto:info@devstudio.com" class="link email">info@devstudio.com </a></li>
+                <li><a href="tel:+380961111111" class="link tel">+38 096 111 11 11 </a></li>
+            </ul>
+          
+        </div>
     </header>
     <main>        
-        <section>
-            <ul>
-                <button>Все</button>
-                <button>Веб-сайты</button>
-                <button>Приложения</button>
-                <button>Дизайн</button>
-                <button>Маркетинг</button>
-            </ul>
+        <section class="section">
+            <h1 class="visually-hidden">Портфолио</h1>
+            <div class="container">
+                <ul>
+                    <button>Все</button>
+                    <button>Веб-сайты</button>
+                    <button>Приложения</button>
+                    <button>Дизайн</button>
+                    <button>Маркетинг</button>
+                </ul>        
+                <ul>
+                    <li>
+                        <img src="./Img/laptop.jpg" alt="laptop">
+                        <p class="name-mosaic">Технокряк</p>
+                        <p class="description-mosaic">Веб-сайт</p>
+                    </li>
+                    <li>
+                        <img src="./Img/poster.jpg" alt="poster">
+                        <p class="name-mosaic">Постер New Orlean vs Golden Star</p>
+                        <p class="description-mosaic">Дизайн</p>
+                    </li>
+                    <li>
+                        <img src="./Img/restourant.svg" alt="restourant">
+                        <p class="name-mosaic">Ресторан Seafood</p>
+                        <p class="description-mosaic">Приложение</p>
+                    </li>
+                    <li>
+                        <img src="./Img/headphones.jpg" alt="headphones">
+                        <p class="name-mosaic">Проект Prime</p>
+                        <p class="description-mosaic">Маркетинг</p>
+                    </li>
+                    <li>
+                        <img src="./Img/boxes.jpg" alt="boxes">
+                        <p class="name-mosaic">Проект Boxes</p>
+                        <p class="description-mosaic">Приложение</p>
+                    </li>
+                    <li>
+                        <img src="./Img/mac.jpg" alt="mac">
+                        <p class="name-mosaic">Inspiration has no Borders</p>
+                        <p class="description-mosaic">Веб-сайт</p>
+                    </li>
+                    <li>
+                        <img src="./Img/book.jpg" alt="book">
+                        <p class="name-mosaic">Издание Limited Edition</p>
+                        <p class="description-mosaic">Дизайн</p>
+                    </li>
+                    <li>
+                        <img src="./Img/lab.jpg" alt="label">
+                        <p class="name-mosaic">Проект LAB</p>
+                        <p class="description-mosaic">Маркетинг</p>
+                    </li>            
+                    <li>
+                        <img src="./Img/business.jpg" alt="business">
+                        <p class="name-mosaic">Growing Business</p>
+                        <p class="description-mosaic">Приложение</p>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <figure>
-            <section>
-                <img src="./Img/laptop.svg" alt="laptop">
-                <b>Технокряк</b>
-                <p>Веб-сайт</p>
-            </section>
-            <section>
-                <img src="./Img/poster.svg" alt="poster">
-                <b>Постер New Orlean vs Golden Star</b>
-                <p>Дизайн</p>
-            </section>
-            <section>
-                <img src="./Img/restourant.svg" alt="restourant">
-                <b>Ресторан Seafood</b>
-                <p>Приложение</p>
-            </section>
-            <section>
-                <img src="./Img/headphones.svg" alt="headphones">
-                <b>Проект Prime</b>
-                <p>Маркетинг</p>
-            </section>
-            <section>
-                <img src="./Img/boxes.svg" alt="boxes">
-                <b>Проект Boxes</b>
-                <p>Приложение</p>
-            </section>
-            <section>
-                <img src="./Img/mac.svg" alt="mac">
-                <b>Inspiration has no Borders</b>
-                <p>Веб-сайт</p>
-            </section>
-            <section>
-                <img src="./Img/book.svg" alt="book">
-                <b>Издание Limited Edition</b>
-                <p>Дизайн</p>
-            </section>
-            <section>
-                <img src="./Img/label.svg" alt="label">
-                <b>Проект LAB</b>
-                <p>Маркетинг</p>
-            </section>            
-            <section>
-                <img src="./Img/business.svg" alt="business">
-                <b>Growing Business</b>
-                <p>Приложение</p>
-            </section>
-        </figure>        
     </main>
-    <footer>
-        <img src="./Img/WebStudio.svg" alt="img">
-        <div>
-            <p>г. Киев, пр-т Леси Украинки, 26</p>
+    <footer class="footer">
+        <div class="container">
+            <a href="./index.html" class="logo" aria-label="main page link"> Web<span class="logo footer">Studio</span> </a>
+            <address class="footer-links">
+                <span class="coord" >г. Киев, пр-т Леси Украинки, 26</span>
+            <ul> 
+                <li><a class="title" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a class="title" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+            </address>
         </div>
-        <address>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </address>        
-        <address>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
     </footer>
-</body>
+</pody>
 </html>

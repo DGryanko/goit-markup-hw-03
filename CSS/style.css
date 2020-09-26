@@ -53,6 +53,15 @@ li {
 	letter-spacing: 0.02em;
 	text-decoration: none;
 }
+.menu_nav {
+    display: flex;
+}
+.menu-list {
+    display: flex;
+}
+.menu-item:not(:last-child) {
+    margin-right: 50px;
+}
 img {
     display: block;
     height: auto;

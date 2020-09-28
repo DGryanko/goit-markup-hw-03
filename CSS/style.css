@@ -13,7 +13,12 @@ p, h1, h2, h3, ul {
 li {
     list-style-type: none
 }
-
+/*  hover и focus для ссылок навигации по сайту*/
+.link.current,
+.link:hover,
+.link:focus {
+  color: var(--text-accent);
+}
 /* Общее - скрыть объект */
 .visually-hidden {
     position: absolute;
@@ -128,7 +133,12 @@ img {
     text-align: center;
     background: var(--adw);
     height: 600px;
-    background-image: url(../Img/background.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ), 
+        url(../Img/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -177,13 +187,17 @@ img {
     border: 1px solid transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.btns {
+.buttons {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
-.btns .btn {
+.li-filter-button {
+    margin-right: 8px;
+}
+.buttons .filter-button {
     padding: 6px 22px;
+    border: none;
     border-radius: 4px;
     color: var(--title-text-color);
     background-color: var(--button-bcg);
@@ -191,6 +205,12 @@ img {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
 .adw .title {
 	color: var(--title-text-color);
@@ -237,7 +257,7 @@ img {
     margin-right: 0;
 }
 .gallery-item {
-    width: calc((100% - 30px*2)/3);
+    width: calc((100% - 30px * 2) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
 }
@@ -320,7 +340,6 @@ img {
     letter-spacing: 0.03em;
 }
 .portfolio-list {
-    margin: -15px;
     padding: 0;
 }
 .name-mosaic {
@@ -341,7 +360,7 @@ img {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     /* identical to box height, or 187% */
 
     letter-spacing: 0.03em;

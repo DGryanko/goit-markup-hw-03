@@ -4,6 +4,7 @@
     --accent-color: #2196f3;
     --white-color: #ffffff;
     --button-bcg: #f5f4fa;
+    --border: #eeeeee;
     --adw: #2F303A;
 }
 p, h1, h2, h3, ul {
@@ -12,6 +13,7 @@ p, h1, h2, h3, ul {
 li {
     list-style-type: none
 }
+
 /* Общее - скрыть объект */
 .visually-hidden {
     position: absolute;
@@ -54,6 +56,7 @@ address {
 .page-header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid var(--border);
 }
 .page-header .email {
     margin-right: 50px;
@@ -174,6 +177,21 @@ img {
     border: 1px solid transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+.btns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.btns .btn {
+    padding: 6px 22px;
+    border-radius: 4px;
+    color: var(--title-text-color);
+    background-color: var(--button-bcg);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
 .adw .title {
 	color: var(--title-text-color);
 
@@ -226,6 +244,12 @@ img {
 .gallery-item:nth-child(3n) {
     margin-right: 0;
 }
+.card-content {
+    width: 370px;
+    padding: 20px 24px;
+    border: 1px solid var(--border);
+    border-top: 0px;
+}
 .frame {
     background: #FFFFFF;
     height: 368px;
@@ -254,13 +278,6 @@ img {
     font-size: 16px;
     line-height: 1.19;  
     text-align: center;
-}
-.top {
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-.bottom {
-    margin-bottom: 30px;
 }
 .position {
     font-family: Roboto;
@@ -302,15 +319,21 @@ img {
 
     letter-spacing: 0.03em;
 }
+.portfolio-list {
+    margin: -15px;
+    padding: 0;
+}
 .name-mosaic {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
+    font-family: roboto, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 4px;
+    color: var(--title-text-color);
+    font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
-    /* identical to box height, or 200% */
-
+    line-height: 2;
     letter-spacing: 0.06em;
+    white-space: nowrap;
+    
 }
 .description-mosaic {
     color: var(--primary-text-color);
@@ -330,7 +353,7 @@ img {
 .link:focus {
     color: var(--accent-color);
 }
-.current {
+.link.current {
 	color: var(--accent-color);
 }
 .footer {    

@@ -28,8 +28,6 @@ address {
     font-style: italic;
 }
 .logo {
-    margin-right: 90px;
-
     font-family: "Raleway", sans-serif;
     color: var(--accent-color);
 
@@ -77,7 +75,7 @@ address {
     display: flex;
     align-items: center;
     margin-right: auto;
-    margin-left: 94px;
+    margin-left: 90px;
 }
 .list {
     list-style: none;
@@ -109,7 +107,7 @@ img {
     line-height: 16px;
     letter-spacing: 0.02em;
 
-    color: #2196F3;
+    color: var(--primary-text-color);
 }
 .tel {
     text-decoration: none;
@@ -121,13 +119,17 @@ img {
     line-height: 16px;
     letter-spacing: 0.02em;
     
-    color: #757575;
+    color: var(--primary-text-color);
 }
-.hat {
+.hero {
     text-align: center;
-    background:  var(--adw);
+    background: var(--adw);
+    height: 600px;
+    background-image: url(../Img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.hat_txt {
+.hero_txt {
     /* Эффективные решения для вашего бизнеса */
         color: var(--white-color);
     
@@ -141,15 +143,29 @@ img {
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
+
+        padding-top: 200px;
+        margin-bottom: 30px;
     }
-.hat_butt {
+.hero_butt {
     color: var(--white-color);
     background-color: var(--accent-color);
 
-    font-weight: 700;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
     font-size: 16px;
-    line-height: 1.87;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+    
+    align-items: center;
+    text-align: center;
     letter-spacing: 0.06em;
+
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
 
     text-decoration: none;
     padding: 10px 32px;
@@ -190,7 +206,6 @@ img {
     margin-top: 0;
     margin-bottom: 50px;
 }
-
 .ul-list {
     display: flex;
     flex-wrap: wrap;
@@ -267,6 +282,15 @@ img {
 .features {
     padding-bottom: 0px;
 }
+.features .title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
 .features-description {
     color: var(--primary-text-color);
     font-family: Roboto;
@@ -309,7 +333,6 @@ img {
 .current {
 	color: var(--accent-color);
 }
-
 .footer {    
     background: #2F303A;    
 }
@@ -318,7 +341,7 @@ img {
     padding-bottom: 60px;
 }
 .footer-links .location {
-	color: #ffffff;
+	color: var(--white-color);
 
 	font-style: normal;
 	font-size: 14px;
